@@ -2,21 +2,14 @@
   "name": "todomvc-ui-selenium-es5",
   "version": "1.0.0",
   "scripts": {
-    "test": "mocha tests/**/*.spec.js --timeout 60000"
+    "test": "mocha tests/**/*.spec.js --timeout 60000 --reporter mocha-allure-reporter --require tests/mocha-allure-setup.js",
+    "allure:serve": "allure serve allure-results"
   },
   "dependencies": {
     "selenium-webdriver": "^4.18.0"
   },
   "devDependencies": {
-    "mocha": "^10.0.0"
+    "mocha": "^10.0.0",
+    "allure-mocha": "^2.0.0"
   }
-}
-
-"devDependencies": {
-  "mocha": "^10.0.0",
-  "allure-mocha": "^2.0.0"
-},
-"scripts": {
-  "test": "mocha tests/**/*.spec.js --timeout 60000 --reporter mocha-allure-reporter",
-  "allure:serve": "allure serve allure-results"
 }
