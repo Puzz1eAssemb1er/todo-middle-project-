@@ -1,0 +1,8 @@
+// utils/driver.js
+var webdriver = require('selenium-webdriver');
+
+var driver = new webdriver.Builder()
+  .forBrowser('chrome')
+  .build();
+
+module.exports.driver = driver;
