@@ -1,0 +1,6 @@
+{
+  "mochaExplorer.files": "**/test/*.js",
+  "mochaExplorer.require": "mocha-allure-reporter",
+  "mochaExplorer.opts": ["--reporter", "mocha-allure-reporter"],
+  "testExplorer.onStart": "restartAfterDelay"
+}
