@@ -1,5 +1,5 @@
-const allure = require('allure-mocha/runtime.js');
+import * as allure from 'allure-mocha/runtime.js';
 
-beforeEach(function () {
+global.beforeEach(function () {
   allure.label('framework', 'selenium');
 });
