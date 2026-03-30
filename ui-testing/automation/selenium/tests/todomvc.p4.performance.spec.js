@@ -5,16 +5,19 @@ var TodoPage = require('../pages/todomvc.page').TodoPage;
 describe('P4: Performance, Stress, DOM Stability', function () {
   var page;
 
-  beforeEach(function (done) {
+   beforeEach(function (done) {
+    driver = createDriver();
     page = new TodoPage(driver);
     page.open(done);
-  });
+});
+
 
   after(function (done) {
     driver.quit().then(function () {
       done();
     });
   });
+
 
   // -----------------------------
   // PERFORMANCE
