@@ -2,7 +2,7 @@
   "name": "todomvc-ui-selenium-es5",
   "version": "1.0.0",
   "scripts": {
-    "test": "mocha tests/**/*.spec.js --timeout 60000 --reporter mocha-allure-reporter --require test/mocha-allure-setup.cjs"
+    "test": "mocha test/**/*.spec.cjs --timeout 60000 --reporter mocha-allure-reporter --require test/mocha-allure-setup.cjs"
 
     "allure:serve": "allure serve allure-results"
   },
