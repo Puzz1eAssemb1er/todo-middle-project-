@@ -1,6 +1,6 @@
 var assert = require('assert');
 var driver = require('../utils/driver').driver;
-var TodoPage = require('../pages/todomvc.page').TodoPage;
+var TodoPage = require('../pages/todomvc.page.cjs').TodoPage;
 
 describe('P2: Clear completed', function () {
   var page;
