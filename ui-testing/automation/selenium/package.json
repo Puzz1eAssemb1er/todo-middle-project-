@@ -4,7 +4,7 @@
   "scripts": {
     "test": "mocha tests/**/*.spec.cjs --timeout 60000 --reporter mocha-allure-reporter --require tests/mocha-allure-setup.cjs"
 
-    allure:serve: allure serve allure-results
+    "allure:serve" : "allure serve allure-results"
   },
   "dependencies": {
     "selenium-webdriver": "^4.18.0"
